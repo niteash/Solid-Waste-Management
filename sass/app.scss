@@ -1,0 +1,634 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;500;600;700&display=swap');
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+$font-family: 'Teko', sans-serif;
+
+
+.transition { transition: .3s cubic-bezier(.3, 0, 0, 1.3) }
+
+
+#myVideo {
+  object-fit: cover;
+  opacity: 0.5;
+  }
+
+// button {
+//     color: #1D9AF2;
+//     background-color: #292D3E;
+//     border: 1px solid #1D9AF2;
+//     border-radius: 4px;
+//     padding: 0 15px;
+//     cursor: pointer;
+//     height: 32px;
+//     font-size: 14px;
+//     transition: all 0.2s ease-in-out;
+//  }
+//  button:hover {
+//    box-shadow: 1px 1px #53a7ea, 2px 2px #53a7ea, 3px 3px #53a7ea;
+//    transform: translateX(-3px);
+//  }
+
+body{
+  scroll-behavior: smooth;
+}
+
+.list-group{
+    height: 100vh;
+    overflow-y: scroll;
+}
+.glider-dot.active {
+    background: #000000 !important;
+}
+.nav-margin{
+    margin-right: 10px;
+}
+#test-over{
+    position:absolute;
+    bottom: 20px;
+    left: 30px;
+    padding: 5px;
+    background: #000000;
+    font-weight: bold;
+    font-size: 80%;
+    color: white;
+}
+
+.outside-shadow{
+    box-shadow: rgba(0, 0, 0, 0.80) 0px 5px 0px, rgb(51, 51, 51) 0px 0px 0px 0px;
+}
+
+.green{
+    color: #7CF567;
+}
+
+// .main_section_text{
+//     padding: 500px;
+    
+// }
+
+.font-border{
+    border-color: #000000;
+}
+
+.image-hover:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white !important;
+    color: black !important;
+}
+.navbar-brand{
+    font-family: 'Teko', sans-serif;
+}
+
+
+.font{
+    color:#F0A264;
+
+}
+
+.font-bg{
+    background-color: #F0A264;
+}
+.background{
+    background-color:  #F5F4F5;
+    // margin-top: 20px;
+    // position: relative;
+}
+
+.overview-img{
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    transform:translate(30px, 30px);
+    
+}
+.text-pattern{
+    background-color: rgb(26, 200, 61);
+}
+
+//SDG
+
+.container-sdg{
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .container-sdg:hover .overlay-sdg{
+    opacity: 3;
+    transform: scale(1);
+  }
+
+  .container-sdg:hover .overlay-hunger{
+    opacity: 3;
+    transform: scale(1);
+  }
+
+  .container-sdg:hover .overlay-good{
+    opacity: 3;
+    transform: scale(1);
+  }
+
+  .container-sdg:hover .overlay-edu{
+    opacity: 3;
+    transform: scale(1);
+  }
+
+  .container-sdg:hover .overlay-gender{
+    opacity: 3;
+    transform: scale(1);
+  }
+
+  .container-sdg:hover .overlay-clean{
+    opacity: 3;
+    transform: scale(1);
+  }
+
+  .container-sdg:hover .overlay-afford{
+    opacity: 3;
+    transform: scale(1);
+  }
+
+
+  .container-sdg:hover .overlay-growth{
+    opacity: 3;
+    transform: scale(1);
+  }
+
+  .container-sdg:hover .overlay-infrast{
+    opacity: 3;
+    transform: scale(1);
+  }
+
+  .container-sdg:hover .overlay-inequal{
+    opacity: 3;
+    transform: scale(1);
+  }
+
+  .container-sdg:hover .overlay-community{
+    opacity: 3;
+    transform: scale(1);
+  }
+
+  .container-sdg:hover .overlay-responsible{
+    opacity: 3;
+    transform: scale(1);
+  }
+
+  .container-sdg:hover .overlay-climate{
+    opacity: 3;
+    transform: scale(1);
+  }
+  .container-sdg:hover .overlay-life{
+    opacity: 3;
+    transform: scale(1);
+  }
+
+  .container-sdg:hover .overlay-land{
+    opacity: 3;
+    transform: scale(1);
+  }
+
+  .container-sdg:hover .overlay-peace{
+    opacity: 3;
+    transform: scale(1);
+  }
+
+  .container-sdg:hover .overlay-partner{
+    opacity: 3;
+    transform: scale(1);
+  }
+  .sdg-img{
+    width: 300px;
+    height: 300px;
+  }
+  .overlay-sdg{
+    position: absolute;
+    background-color: rgba(255,0,0,.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(1.3);
+    opacity: 0;
+    transition: transform .4s ease 0s;
+  }
+
+  .overlay-hunger{
+    position: absolute;
+    background-color: #d19f2a;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(1.3);
+    opacity: 0;
+    transition: transform .4s ease 0s;
+  }
+
+  .overlay-good{
+    position: absolute;
+    background-color: #2d9a47;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(1.3);
+    opacity: 0;
+    transition: transform .4s ease 0s;
+  }
+
+  .overlay-edu{
+    position: absolute;
+    background-color: #d22f0b;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(1.3);
+    opacity: 0;
+    transition: transform .4s ease 0s;
+  }
+
+  .overlay-gender{
+    position: absolute;
+    background-color: #e7360f;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(1.3);
+    opacity: 0;
+    transition: transform .4s ease 0s;
+  }
+
+  .overlay-clean{
+    position: absolute;
+    background-color: #27bfe6;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(1.3);
+    opacity: 0;
+    transition: transform .4s ease 0s;
+  }
+
+  .overlay-afford{
+    position: absolute;
+    background-color: #fbc412;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(1.3);
+    opacity: 0;
+    transition: transform .4s ease 0s;
+  }
+
+  .overlay-infrast{
+    position: absolute;
+    background-color: #f26a2d;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(1.3);
+    opacity: 0;
+    transition: transform .4s ease 0s;
+  }
+
+  .overlay-growth{
+    position: absolute;
+    background-color: #a31c44;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(1.3);
+    opacity: 0;
+    transition: transform .4s ease 0s;
+  }
+
+  .overlay-inequal{
+    position: absolute;
+    background-color: #e01483;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(1.3);
+    opacity: 0;
+    transition: transform .4s ease 0s;
+  }
+
+  .overlay-community{
+    position: absolute;
+    background-color: #f89d2a;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(1.3);
+    opacity: 0;
+    transition: transform .4s ease 0s;
+  }
+
+  .overlay-responsible{
+    position: absolute;
+    background-color: #bf8d2c;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(1.3);
+    opacity: 0;
+    transition: transform .4s ease 0s;
+  }
+
+  .overlay-climate{
+    position: absolute;
+    background-color: #407f46;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(1.3);
+    opacity: 0;
+    transition: transform .4s ease 0s;
+  }
+  
+  .overlay-life{
+    position: absolute;
+    background-color: #1f97d4;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(1.3);
+    opacity: 0;
+    transition: transform .4s ease 0s;
+  }
+
+  .overlay-land{
+    position: absolute;
+    background-color: #59ba48;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(1.3);
+    opacity: 0;
+    transition: transform .4s ease 0s;
+  }
+
+  .overlay-peace{
+    position: absolute;
+    background-color: #126a9f;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(1.3);
+    opacity: 0;
+    transition: transform .4s ease 0s;
+  }
+
+  .overlay-partner{
+    position: absolute;
+    background-color: #13496b;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(1.3);
+    opacity: 0;
+    transition: transform .4s ease 0s;
+  }
+  .overlay-sdg span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 2em;
+    color: #fff;
+    font-family: Sans-serif;
+  }
+
+  .overlay-hunger span{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 2em;
+    color: #fff;
+    font-family: Sans-serif;
+  }
+
+  .overlay-good span{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 2em;
+    color: #fff;
+    font-family: Sans-serif;
+  }
+
+  .overlay-edu span{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 2em;
+    color: #fff;
+    font-family: Sans-serif;
+  }
+
+  .overlay-gender span{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 2em;
+    color: #fff;
+    font-family: Sans-serif;
+  }
+
+  .overlay-clean span{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 2em;
+    color: #fff;
+    font-family: Sans-serif;
+  }
+
+  .overlay-afford span{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 2em;
+    color: #fff;
+    font-family: Sans-serif;
+  }
+
+  .overlay-growth span{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #fff;
+    font-family: Sans-serif;
+  }
+
+
+  .overlay-infrast span{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #fff;
+    font-family: Sans-serif;
+  }
+
+
+  .overlay-inequal span{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #fff;
+    font-family: Sans-serif;
+  }
+
+
+  .overlay-community span{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 2rem;
+    color: #fff;
+    font-family: Sans-serif;
+  }
+
+  .overlay-responsible span{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: Sans-serif;
+  }
+
+  .overlay-climate span{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: Sans-serif;
+  }
+
+  .overlay-life span{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #fff;
+    font-family: Sans-serif;
+  }
+
+  .overlay-land span{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 1rem;
+    color: #fff;
+    font-family: Sans-serif;
+  }
+
+  .overlay-peace span{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: #fff;
+    font-family: Sans-serif;
+  }
+
+  .overlay-partner span{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: Sans-serif;
+  }
+
+
+  
+  .container-sdg img{
+    transition: transform .8s ease;
+  }
+  
+  .container-sdg:hover img{
+    transform: scale(1.1);
+  }
+
+
+  //footer
+
+  .pattern{
+    background-color: #00b3fd;
+  }
+
+  .pattern-text{
+    color: #00b3fd;
+  }
+
+  .pattern-image{
+
+background-image: linear-gradient(0deg, rgb(184, 200, 255), rgb(189, 231, 255));
+  }
+  .pattern-dots-sm {
+    background-color: #00b3fd;
+  }
+ .waste {
+  color: #1D9AF2;
+  background-color: #292D3E;
+  // border: 1px solid #1D9AF2;
+  border-radius: 4px;
+  padding: 15px 18px 30px 15px;
+  cursor: pointer;
+  height: 32px;
+  font-size: 30px;
+  box-shadow: 0 0 4px #999;
+  outline: none;
+  background-position: center;
+  transition: background 0.8s;
+}
+.waste:hover{
+  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%)
+   center/15000%;
+  color: white;
+}
+
+.waste:active{
+  background-color: #292d3e;
+  background-size: 100%;
+  transition: background 0s;
+}

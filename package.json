@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "animation.css": "^0.1.0",
+    "atropos": "^2.0.2",
+    "bootstrap": "^5.3.2",
+    "bootstrap-icons": "^1.11.1",
+    "chart.js": "^4.4.0",
+    "filters.css": "^1.0.0",
+    "glider-js": "^1.7.8",
+    "pattern.css": "^1.0.0",
+    "sass": "^1.68.0",
+    "wowjs": "^1.1.3"
+  }
+}
